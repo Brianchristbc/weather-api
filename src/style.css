@@ -1,0 +1,78 @@
+body {
+  background: #eceeae;
+  background: fixed
+    linear-gradient(21deg, rgb(217, 180, 94) 0%, rgb(19, 119, 232) 100%);
+  font-family: "Inter";
+  color: rgb(255, 255, 255);
+}
+
+.weather-output {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.location {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.temperature {
+  margin-top: -0.4rem;
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+.conditions {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: -5rem;
+}
+
+form {
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+}
+
+.main-form {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+form input {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0.08rem solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.7rem;
+  font-family: "Inter";
+  color: white;
+  font-weight: 500;
+}
+
+form input::placeholder {
+  color: white;
+}
+
+form button {
+  background-color: white;
+  font-weight: 500;
+  color: rgb(32, 123, 223);
+  border: 0.13rem solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.7rem;
+  font-family: "Inter";
+}
+
+@media (max-width: 570px) {
+  .location {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+}
